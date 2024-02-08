@@ -28,3 +28,25 @@ for (let i = 0; i <= 100; i++) {
  *Question 2: Fibonacci Sequence
 Write a program to generate the Fibonacci sequence up to 100.
  */
+
+/**
+ * Question 3: Power of Two
+Write a program that takes an integer as input and returns true if the input is a power of two.
+ */
+
+const powerOfTwo = function (val) {
+  return val % 2 === 0 ? true : false;
+};
+console.log(powerOfTwo(8));
+
+/**
+ * Question 4: Capitalize Words
+Write a program that accepts a string as input, capitalizes the first letter of each word in the 
+string, and then returns the result string.
+Examples: 
+ */
+
+const capitalize = function (str) {
+  return str.split(" ").map(word => `${word[0].toUpperCase()}${word.slice(1)}`);
+};
+console.log(capitalize("i love programming"));
